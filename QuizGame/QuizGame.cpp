@@ -3,7 +3,7 @@
 int main() {
 	setlocale(LC_ALL, "russian");
 
-	std::cout << "\n\n\t\t\t\t<ИГРА ВИТОРИНА>"
+	std::cout << "\n\n\t\t\t\t<ИГРА ВИКТОРИНА>"
 		<< "\n";
 	std::cout << "\nНажмите Enter что бы начать игру..."
 		<< "\n";
