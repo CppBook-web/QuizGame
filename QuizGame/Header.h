@@ -21,7 +21,7 @@ public:
         std::string, int, int);
     void AskQuestion();
 };
-//Установка значений
+//РЈСЃС‚Р°РЅРѕРІРєР° Р·РЅР°С‡РµРЅРёР№
 void Question::SetValues(
     std::string qt, std::string a1,
     std::string a2, std::string a3,
@@ -34,7 +34,7 @@ void Question::SetValues(
     correct_answer = ca;
     question_score = qs;
 }
-//Отображение вопросов
+//РћС‚РѕР±СЂР°Р¶РµРЅРёРµ РІРѕРїСЂРѕСЃРѕРІ
 void Question::AskQuestion() {
     std::cout << "\n";
     std::cout << question_text << "\n"
@@ -43,16 +43,16 @@ void Question::AskQuestion() {
         << "  3)" << answer_3
         << "  4)" << answer_4
         << "\n";
-    std::cout << "Ваш ответ: ";
+    std::cout << "Р’Р°С€ РѕС‚РІРµС‚: ";
     std::cin >> answer;
 
     if (answer == correct_answer) {
-        std::cout << "\nПравильно!\n"
-            << "Очков: +" << question_score << "\n";
+        std::cout << "\nРџСЂР°РІРёР»СЊРЅРѕ!\n"
+            << "РћС‡РєРѕРІ: +" << question_score << "\n";
         score = score + question_score;
     }
     else {
-        std::cout << "\nНеправильно!\n" << "Очков: +0" << "\n"
-            << "Правильный ответ = " << correct_answer << ".\n\n";
+        std::cout << "\nРќРµРїСЂР°РІРёР»СЊРЅРѕ!\n" << "РћС‡РєРѕРІ: +0" << "\n"
+            << "РџСЂР°РІРёР»СЊРЅС‹Р№ РѕС‚РІРµС‚ = " << correct_answer << ".\n\n";
     }
 }
